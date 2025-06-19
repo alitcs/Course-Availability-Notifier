@@ -81,7 +81,7 @@ def navigate_to_course_page():
 def my_click(Xpath):
 
     WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.Xpath, Xpath))
+        EC.presence_of_element_located((By.XPATH, Xpath))
     )
 
     course_button = driver.find_element(By.XPATH, Xpath)
